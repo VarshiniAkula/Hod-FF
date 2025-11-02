@@ -1,0 +1,27 @@
+batch_size: 1
+checkpoints_dir: outputs/checkpoints
+classes:
+- real
+- fake
+data_root: ./data
+epochs: 3
+face_size: 299
+frame_sample_rate: 10
+freeze_backbones: true
+learning_rate: 1.0e-05
+logs_dir: outputs/logs
+max_sequences_per_video: 2
+mtcnn_margin: 20
+outputs_root: ./outputs
+patience: 4
+predictions_dir: outputs/predictions
+processed_dir: processed
+raw_dir: raw
+seed: 42
+sequence_length: 4
+sho:
+  enabled: true
+  iterations: 5
+  population: 6
+test_split: 0.2
+val_split: 0.2
